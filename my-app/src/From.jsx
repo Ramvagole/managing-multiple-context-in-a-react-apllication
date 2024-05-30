@@ -28,7 +28,7 @@ export function Display(){
         }
     }
     return(
-        <div style={{backgroundColor:!flame?"red":"white"}}>
+        <div style={{backgroundColor:!flame?"red":"white",color:flame?"black":"white"}}>
             <button onClick={()=>{changeColor(flame)}}>Dark/Light</button>
             <form onSubmit={update}>
                 <input  ref={tit} placeholder="Enter title name" />
